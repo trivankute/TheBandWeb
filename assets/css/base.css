@@ -1,0 +1,28 @@
+:root
+{
+    --text-color:#333;
+}
+*
+{
+    box-sizing: inherit;
+}
+html
+{
+    box-sizing:border-box;
+    font-size:62.5%;
+    line-height:1.6rem;
+    font-family:'Roboto',sans-serif;
+}
+.grid
+{
+    width:1230px;
+    max-width:100%;
+    margin:0 auto;
+}
+/* .grid__row */
+/* {
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:...;
+    margin-right:...;
+} */

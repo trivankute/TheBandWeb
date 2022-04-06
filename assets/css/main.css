@@ -1,0 +1,118 @@
+.main{
+    width:100%;
+}
+/* header start */
+.header{
+    position:sticky;
+    top:0;
+    width:100%;
+    background-color:black;
+    display:flex;
+    justify-content:space-between;
+}
+.header_firstPart{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    padding:0;
+    margin:0;
+}
+.header_firstPart > li > a:hover
+{
+    background-color:#ccc;
+    color:black;
+}
+.header_firstPart > li > a{
+    display:block;
+    text-decoration:none;
+    padding:12px 24px;
+    color:white;
+    font-size:1.6rem;
+    line-height:2.25rem;
+}
+/* secondPart begin*/
+.header_secondPart{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:12px 24px;
+    cursor:pointer;
+}
+.header_secondPart_icon{
+    color:white;
+    font-size:1.6rem;
+}
+.header_secondPart:hover
+{
+    background-color:#f44336;
+}
+/* secondPart end*/
+
+/* subpart begin*/
+.header_firstPart_member:nth-child(5)
+{
+    position:relative;
+}
+.header_firstPart-specialLink
+{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.down_array{
+    padding-left:2px;
+    font-size:1.4rem;
+    color:white;
+}
+.header_firstPart_subPart{
+    position:absolute;
+    padding:0;
+    background-color:white;
+    display:none;
+    list-style:none;
+    /* box-shadow:0 0 10px #333; */
+}
+.header_firstPart_subPart_member{
+    color:var(--text-color);
+    display:block;
+    text-decoration: none;
+    font-size:1.6rem;
+    list-style:none;
+    padding:8px 48px 8px 12px;
+    line-height:2.25rem;
+    cursor:pointer;
+}
+.header_firstPart_subPart_member:hover{
+    background-color:#ccc;
+    color:black;
+}
+.header_firstPart_member:nth-child(5):hover > .header_firstPart_subPart
+{
+    display:block;
+}
+.header_firstPart_member:nth-child(5):hover  > a
+{
+    background-color:#ccc;
+    color:black;
+}
+.header_firstPart_member:nth-child(5):hover .down_array
+{
+    background-color:#ccc;
+    color:black;
+}
+.header_firstPart_member:nth-child(5)::after {
+    position:absolute;
+    content:"";
+    width:100%;
+    height:5px;
+    bottom:0px;
+}
+/* subpart end*/
+/* header end */
+
+/* slider */
+.carousel
+{
+    z-index:-1;
+}
